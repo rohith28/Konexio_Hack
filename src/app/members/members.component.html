@@ -1,0 +1,15 @@
+
+<div class="form-container" id="toolbar">
+
+  <header [@fallIn]="state">
+    <button (click)="logout()" class="basic-btn">Logout</button>
+  </header>
+  <div id="page" [@moveInLeft]="state">
+    <h2>Hey {{ name.auth.displayName }}!</h2>
+    <button (click)="home()">Home</button>
+    <button (click)="profile()">Profile</button>
+    <button (click)="connection()">Connections</button>
+    <button (click)="resource()">Other Resources</button>
+    <button (click)="help()">Chat</button>
+  </div>
+</div>
